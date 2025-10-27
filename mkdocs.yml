@@ -1,0 +1,47 @@
+site_name: Task Manager
+site_url: https://ExceptionNotFoundException.github.io/task_manager_api/
+site_description: Руководство по созданию REST API с применением лучших практик
+site_author: Vladislav Gabergan
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: black
+      accent: black
+      background: white
+    - scheme: slate
+      primary: black
+      accent: #404040
+      background: #121212
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - content.code.copy
+
+nav:
+  - Cодержание: index.md
+  - Начало работы: 00_getting_started.md
+  - Архитектура: 01_architecture.md
+  - DTO: 02_dto_pattern.md
+  - Исключения: 03_exception_handling.md
+  - Валидация: 04_validation.md
+  - Тестирование: 05_testing.md
+  - Справочник-API: 06_api_reference.md
+  - Заключение: 07_conclusion.md
+
+plugins:
+  - search
+
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - admonition
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+
+      link: https://github.com/ExceptionNotFoundException
