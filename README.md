@@ -1,4 +1,4 @@
-# Best Practices: Task Manager API Guide
+# Task Manager
 
 [![Maven](https://img.shields.io/badge/Maven-C71A36?style=flat&logo=apache-maven)](https://maven.apache.org/)
 [![Java](https://img.shields.io/badge/Java-21-orange?style=flat&logo=openjdk)](https://openjdk.org/)
@@ -141,3 +141,4 @@ Email: gabergan90@gmail.com
 
 ---
 _Проект создан как портфолио технического писателя и Java-разработчика, демонстрирующий профессиональные подходы к созданию enterprise-приложений._
+
