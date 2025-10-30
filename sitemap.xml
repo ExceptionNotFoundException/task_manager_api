@@ -2,38 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://ExceptionNotFoundException.github.io/task_manager_api/</loc>
-         <lastmod>2025-10-27</lastmod>
+         <lastmod>2025-10-30</lastmod>
     </url>
     <url>
          <loc>https://ExceptionNotFoundException.github.io/task_manager_api/00_getting_started/</loc>
-         <lastmod>2025-10-27</lastmod>
+         <lastmod>2025-10-30</lastmod>
     </url>
     <url>
          <loc>https://ExceptionNotFoundException.github.io/task_manager_api/01_architecture/</loc>
-         <lastmod>2025-10-27</lastmod>
+         <lastmod>2025-10-30</lastmod>
     </url>
     <url>
          <loc>https://ExceptionNotFoundException.github.io/task_manager_api/02_dto_pattern/</loc>
-         <lastmod>2025-10-27</lastmod>
+         <lastmod>2025-10-30</lastmod>
     </url>
     <url>
          <loc>https://ExceptionNotFoundException.github.io/task_manager_api/03_exception_handling/</loc>
-         <lastmod>2025-10-27</lastmod>
+         <lastmod>2025-10-30</lastmod>
     </url>
     <url>
          <loc>https://ExceptionNotFoundException.github.io/task_manager_api/04_validation/</loc>
-         <lastmod>2025-10-27</lastmod>
+         <lastmod>2025-10-30</lastmod>
     </url>
     <url>
          <loc>https://ExceptionNotFoundException.github.io/task_manager_api/05_testing/</loc>
-         <lastmod>2025-10-27</lastmod>
+         <lastmod>2025-10-30</lastmod>
     </url>
     <url>
          <loc>https://ExceptionNotFoundException.github.io/task_manager_api/06_api_reference/</loc>
-         <lastmod>2025-10-27</lastmod>
+         <lastmod>2025-10-30</lastmod>
     </url>
     <url>
          <loc>https://ExceptionNotFoundException.github.io/task_manager_api/07_conclusion/</loc>
-         <lastmod>2025-10-27</lastmod>
+         <lastmod>2025-10-30</lastmod>
     </url>
 </urlset>
