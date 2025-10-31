@@ -1,39 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
-         <loc>https://ExceptionNotFoundException.github.io/task_manager_api/</loc>
-         <lastmod>2025-10-31</lastmod>
+        <loc>https://ExceptionNotFoundException.github.io/task_manager_api/</loc>
+        <lastmod>2025-10-31</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://ExceptionNotFoundException.github.io/task_manager_api/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ExceptionNotFoundException.github.io/task_manager_api/en/"/>
     </url>
     <url>
-         <loc>https://ExceptionNotFoundException.github.io/task_manager_api/00_getting_started/</loc>
-         <lastmod>2025-10-31</lastmod>
+        <loc>https://ExceptionNotFoundException.github.io/task_manager_api/00_getting_started/</loc>
+        <lastmod>2025-10-31</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://ExceptionNotFoundException.github.io/task_manager_api/00_getting_started/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ExceptionNotFoundException.github.io/task_manager_api/en/00_getting_started/"/>
     </url>
     <url>
-         <loc>https://ExceptionNotFoundException.github.io/task_manager_api/01_architecture/</loc>
-         <lastmod>2025-10-31</lastmod>
+        <loc>https://ExceptionNotFoundException.github.io/task_manager_api/01_architecture/</loc>
+        <lastmod>2025-10-31</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://ExceptionNotFoundException.github.io/task_manager_api/01_architecture/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ExceptionNotFoundException.github.io/task_manager_api/en/01_architecture/"/>
     </url>
     <url>
-         <loc>https://ExceptionNotFoundException.github.io/task_manager_api/02_dto_pattern/</loc>
-         <lastmod>2025-10-31</lastmod>
+        <loc>https://ExceptionNotFoundException.github.io/task_manager_api/02_dto_pattern/</loc>
+        <lastmod>2025-10-31</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://ExceptionNotFoundException.github.io/task_manager_api/02_dto_pattern/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ExceptionNotFoundException.github.io/task_manager_api/en/02_dto_pattern/"/>
     </url>
     <url>
-         <loc>https://ExceptionNotFoundException.github.io/task_manager_api/03_exception_handling/</loc>
-         <lastmod>2025-10-31</lastmod>
+        <loc>https://ExceptionNotFoundException.github.io/task_manager_api/03_exception_handling/</loc>
+        <lastmod>2025-10-31</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://ExceptionNotFoundException.github.io/task_manager_api/03_exception_handling/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ExceptionNotFoundException.github.io/task_manager_api/en/03_exception_handling/"/>
     </url>
     <url>
-         <loc>https://ExceptionNotFoundException.github.io/task_manager_api/04_validation/</loc>
-         <lastmod>2025-10-31</lastmod>
+        <loc>https://ExceptionNotFoundException.github.io/task_manager_api/04_validation/</loc>
+        <lastmod>2025-10-31</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://ExceptionNotFoundException.github.io/task_manager_api/04_validation/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ExceptionNotFoundException.github.io/task_manager_api/en/04_validation/"/>
     </url>
     <url>
-         <loc>https://ExceptionNotFoundException.github.io/task_manager_api/05_testing/</loc>
-         <lastmod>2025-10-31</lastmod>
+        <loc>https://ExceptionNotFoundException.github.io/task_manager_api/05_testing/</loc>
+        <lastmod>2025-10-31</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://ExceptionNotFoundException.github.io/task_manager_api/05_testing/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ExceptionNotFoundException.github.io/task_manager_api/en/05_testing/"/>
     </url>
     <url>
-         <loc>https://ExceptionNotFoundException.github.io/task_manager_api/06_api_reference/</loc>
-         <lastmod>2025-10-31</lastmod>
+        <loc>https://ExceptionNotFoundException.github.io/task_manager_api/06_api_reference/</loc>
+        <lastmod>2025-10-31</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://ExceptionNotFoundException.github.io/task_manager_api/06_api_reference/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ExceptionNotFoundException.github.io/task_manager_api/en/06_api_reference/"/>
     </url>
     <url>
-         <loc>https://ExceptionNotFoundException.github.io/task_manager_api/07_conclusion/</loc>
-         <lastmod>2025-10-31</lastmod>
+        <loc>https://ExceptionNotFoundException.github.io/task_manager_api/07_conclusion/</loc>
+        <lastmod>2025-10-31</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://ExceptionNotFoundException.github.io/task_manager_api/07_conclusion/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ExceptionNotFoundException.github.io/task_manager_api/en/07_conclusion/"/>
+    </url>
+    <url>
+        <loc>https://ExceptionNotFoundException.github.io/task_manager_api/en/</loc>
+        <lastmod>2025-10-31</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ExceptionNotFoundException.github.io/task_manager_api/en/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://ExceptionNotFoundException.github.io/task_manager_api/"/>
+    </url>
+    <url>
+        <loc>https://ExceptionNotFoundException.github.io/task_manager_api/en/00_getting_started/</loc>
+        <lastmod>2025-10-31</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ExceptionNotFoundException.github.io/task_manager_api/en/00_getting_started/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://ExceptionNotFoundException.github.io/task_manager_api/00_getting_started/"/>
+    </url>
+    <url>
+        <loc>https://ExceptionNotFoundException.github.io/task_manager_api/en/01_architecture/</loc>
+        <lastmod>2025-10-31</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ExceptionNotFoundException.github.io/task_manager_api/en/01_architecture/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://ExceptionNotFoundException.github.io/task_manager_api/01_architecture/"/>
+    </url>
+    <url>
+        <loc>https://ExceptionNotFoundException.github.io/task_manager_api/en/02_dto_pattern/</loc>
+        <lastmod>2025-10-31</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ExceptionNotFoundException.github.io/task_manager_api/en/02_dto_pattern/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://ExceptionNotFoundException.github.io/task_manager_api/02_dto_pattern/"/>
+    </url>
+    <url>
+        <loc>https://ExceptionNotFoundException.github.io/task_manager_api/en/03_exception_handling/</loc>
+        <lastmod>2025-10-31</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ExceptionNotFoundException.github.io/task_manager_api/en/03_exception_handling/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://ExceptionNotFoundException.github.io/task_manager_api/03_exception_handling/"/>
+    </url>
+    <url>
+        <loc>https://ExceptionNotFoundException.github.io/task_manager_api/en/04_validation/</loc>
+        <lastmod>2025-10-31</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ExceptionNotFoundException.github.io/task_manager_api/en/04_validation/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://ExceptionNotFoundException.github.io/task_manager_api/04_validation/"/>
+    </url>
+    <url>
+        <loc>https://ExceptionNotFoundException.github.io/task_manager_api/en/05_testing/</loc>
+        <lastmod>2025-10-31</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ExceptionNotFoundException.github.io/task_manager_api/en/05_testing/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://ExceptionNotFoundException.github.io/task_manager_api/05_testing/"/>
+    </url>
+    <url>
+        <loc>https://ExceptionNotFoundException.github.io/task_manager_api/en/06_api_reference/</loc>
+        <lastmod>2025-10-31</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ExceptionNotFoundException.github.io/task_manager_api/en/06_api_reference/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://ExceptionNotFoundException.github.io/task_manager_api/06_api_reference/"/>
+    </url>
+    <url>
+        <loc>https://ExceptionNotFoundException.github.io/task_manager_api/en/07_conclusion/</loc>
+        <lastmod>2025-10-31</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ExceptionNotFoundException.github.io/task_manager_api/en/07_conclusion/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://ExceptionNotFoundException.github.io/task_manager_api/07_conclusion/"/>
     </url>
 </urlset>
