@@ -197,6 +197,14 @@ Content-Type: application/json
 
 <hr>
 
-Реализованная валидация обеспечивает комплексную защиту данных на всех уровнях приложения - от первичной
-проверки DTO до финальных ограничений базы данных. Такой многоуровневый подход гарантирует надежность API
-и целостность данных.
+<footer class="footer-nav">
+  <a href="../03_exception_handling/" class="footer-nav__link footer-nav__link--prev">
+    <span class="footer-nav__icon">←</span>
+    <span class="footer-nav__title">Обработка исключений</span>
+  </a>
+
+  <a href="../05_testing/" class="footer-nav__link footer-nav__link--next">
+    <span class="footer-nav__title">Тестирование</span>
+    <span class="footer-nav__icon">→</span>
+  </a>
+</footer>

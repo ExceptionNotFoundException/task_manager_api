@@ -263,5 +263,14 @@ void test2() {}
 
 <hr>
 
-Тестирование обеспечивает стабильность приложения и безопасность изменений, одновременно способствуя 
-созданию качественной архитектуры кода.
+<footer class="footer-nav">
+  <a href="../04_validation/" class="footer-nav__link footer-nav__link--prev">
+    <span class="footer-nav__icon">←</span>
+    <span class="footer-nav__title">Валидация данных</span>
+  </a>
+
+  <a href="../06_api_reference/" class="footer-nav__link footer-nav__link--next">
+    <span class="footer-nav__title">Справочник API</span>
+    <span class="footer-nav__icon">→</span>
+  </a>
+</footer>

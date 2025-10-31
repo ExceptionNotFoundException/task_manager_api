@@ -192,3 +192,15 @@ Accept: application/json
 * [cURL-запросы](https://curl.se/)
 
 <hr>
+
+<footer class="footer-nav">
+  <a href="../" class="footer-nav__link footer-nav__link--prev">
+    <span class="footer-nav__icon">←</span>
+    <span class="footer-nav__title">Начало работы</span>
+  </a>
+
+  <a href="../01_architecture/" class="footer-nav__link footer-nav__link--next">
+    <span class="footer-nav__title">Архитектура приложения</span>
+    <span class="footer-nav__icon">→</span>
+  </a>
+</footer>

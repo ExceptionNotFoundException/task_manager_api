@@ -413,3 +413,15 @@ public ResponseEntity<TaskResponse> getTask(
 ```
 
 <hr>
+
+<footer class="footer-nav">
+  <a href="../05_testing/" class="footer-nav__link footer-nav__link--prev">
+    <span class="footer-nav__icon">←</span>
+    <span class="footer-nav__title">Тестирование</span>
+  </a>
+
+  <a href="../07_conclusion/" class="footer-nav__link footer-nav__link--next">
+    <span class="footer-nav__title">Заключение</span>
+    <span class="footer-nav__icon">→</span>
+  </a>
+</footer>

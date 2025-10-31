@@ -307,5 +307,14 @@ Content-Type: application/json
 
 <hr>
 
-Единый подход к обработке исключений гарантирует клиентам предсказуемый формат ошибок и понятные сообщения, 
-обеспечивая при этом безопасность.
+<footer class="footer-nav">
+  <a href="../02_dto_pattern/" class="footer-nav__link footer-nav__link--prev">
+    <span class="footer-nav__icon">←</span>
+    <span class="footer-nav__title">Шаблон проектирования DTO</span>
+  </a>
+
+  <a href="../04_validation/" class="footer-nav__link footer-nav__link--next">
+    <span class="footer-nav__title">Валидация данных</span>
+    <span class="footer-nav__icon">→</span>
+  </a>
+</footer>

@@ -8,7 +8,7 @@
 
 Ниже представлена диаграмма взаимодействия слоёв:
 
-![Диаграмма слоёв](assets/layer-diagram.png)
+![Диаграмма взаимодействия слоёв](assets/layer-diagram.png)
 
 Клиент отправляет [HTTP-запрос](https://ru.wikipedia.org/wiki/HTTP#Структура_HTTP-сообщения), который первым делом попадает в [контроллер](#controller). Здесь данные запроса оборачиваются
 в специальный объект для передачи данных - [TaskRequest](#dto), который обеспечивает безопасность, проверяя и фильтруя
@@ -643,3 +643,15 @@ public class WrongRequestException extends RuntimeException{
 ```
 
 <hr>
+
+<footer class="footer-nav">
+  <a href="../00_getting_started" class="footer-nav__link footer-nav__link--prev">
+    <span class="footer-nav__icon">←</span>
+    <span class="footer-nav__title">Начало работы</span>
+  </a>
+
+  <a href="../02_dto_pattern/" class="footer-nav__link footer-nav__link--next">
+    <span class="footer-nav__title">Шаблон проектирования DTO</span>
+    <span class="footer-nav__icon">→</span>
+  </a>
+</footer>

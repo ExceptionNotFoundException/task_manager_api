@@ -318,8 +318,17 @@ public record TaskResponse(
 
 <hr>
 
-DTO является защитным механизмом, который обеспечивает безопасность, предсказуемость и стабильность API.
+<footer class="footer-nav">
+  <a href="../01_architecture/" class="footer-nav__link footer-nav__link--prev">
+    <span class="footer-nav__icon">←</span>
+    <span class="footer-nav__title">Архитектура приложения</span>
+  </a>
 
+  <a href="../03_exception_handling/" class="footer-nav__link footer-nav__link--next">
+    <span class="footer-nav__title">Обработка исключений</span>
+    <span class="footer-nav__icon">→</span>
+  </a>
+</footer>
 
 
 

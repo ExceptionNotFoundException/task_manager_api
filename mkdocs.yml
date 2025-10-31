@@ -9,10 +9,16 @@ theme:
     - scheme: default
       primary: black
       accent: black
+      toggle:
+        icon: material/weather-sunny
+        name: Тёмный режим
       background: white
     - scheme: slate
       primary: black
       accent: #404040
+      toggle:
+        icon: material/weather-night
+        name: Светлый режим
       background: #121212
   features:
     - navigation.tabs
@@ -22,7 +28,7 @@ theme:
     - content.code.copy
 
 nav:
-  - Cодержание: index.md
+  - Содержание: index.md
   - Начало работы: 00_getting_started.md
   - Архитектура: 01_architecture.md
   - DTO: 02_dto_pattern.md
@@ -34,14 +40,25 @@ nav:
 
 plugins:
   - search
+  - i18n:
+      default_language: ru
+      languages:
+        ru: Русский
+        en: English
 
 markdown_extensions:
   - pymdownx.superfences
   - pymdownx.highlight
   - admonition
 
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/extra.js
+
 extra:
   social:
     - icon: fontawesome/brands/github
-
       link: https://github.com/ExceptionNotFoundException
+      name: Github
