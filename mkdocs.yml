@@ -40,14 +40,6 @@ nav:
 
 plugins:
   - search
-  - i18n:
-      default_language: ru
-      languages:
-        - locale: ru
-          name: Русский
-          default: true
-        - locale: en
-          name: English
 
 markdown_extensions:
   - pymdownx.superfences
@@ -66,4 +58,5 @@ extra:
       link: https://github.com/ExceptionNotFoundException
 
       name: Github
+
 
