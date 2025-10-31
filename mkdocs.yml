@@ -40,7 +40,7 @@ nav:
 
 plugins:
   - search
-    - i18n:
+  - i18n:
       default_language: ru
       languages:
         - locale: ru
@@ -66,3 +66,4 @@ extra:
       link: https://github.com/ExceptionNotFoundException
 
       name: Github
+
