@@ -10,28 +10,28 @@
 
 Пакет `com.example.taskmanager.exception`
 
-* GlobalExceptionHandler
-* InternalServerException
-* ResourceNotFoundException
-* WrongRequestException
+* `GlobalExceptionHandler`
+* `InternalServerException`
+* `ResourceNotFoundException`
+* `WrongRequestException`
 
 ## Архитектура обработки исключений
 
-**Методы GlobalExceptionHandler**
+**Методы `GlobalExceptionHandler`**
 
-|               Метод                |    Обрабатываемые исключения    | HTTP Status |                      Описание                       |
-|:----------------------------------:|:-------------------------------:|:-----------:|:---------------------------------------------------:|
-|  handleResourceNotFoundException   |    ResourceNotFoundException    |     404     |          Отсутствие запрашиваемого ресурса          |
-|    handleWrongRequestException     |      WrongRequestException      |     400     |           Некорректные запросы от клиента           |
-|   handleInternalServerException    |     InternalServerException     |     500     | Внутренние ошибки сервера с сохранением stack trace |
-|     handleValidationExceptions     | MethodArgumentNotValidException |     400     |    Ошибки валидации DTO с детализацией по полям     |
-| handleConstraintViolationException |  ConstraintViolationException   |     400     |           Нарушения constraints валидации           |
-|     handleAllUncaughtException     |            Exception            |     500     |           Обработка остальных исключений            |
+|                Метод                 |     Обрабатываемые исключения     | HTTP Status |                         Описание                          |
+|:------------------------------------:|:---------------------------------:|:-----------:|:---------------------------------------------------------:|
+|  `handleResourceNotFoundException`   |    `ResourceNotFoundException`    |     404     |             Отсутствие запрашиваемого ресурса             |
+|    `handleWrongRequestException`     |      `WrongRequestException`      |     400     |              Некорректные запросы от клиента              |
+|   `handleInternalServerException`    |     `InternalServerException`     |     500     | Внутренние ошибки сервера с сохранением трассировки стека |
+|     `handleValidationExceptions`     | `MethodArgumentNotValidException` |     400     |       Ошибки валидации DTO с детализацией по полям        |
+| `handleConstraintViolationException` |  `ConstraintViolationException`   |     400     |              Нарушения constraints валидации              |
+|     `handleAllUncaughtException`     |            `Exception`            |     500     |              Обработка остальных исключений               |
 
 
 Класс `GlobalExceptionHandler` с аннотацией `@RestControllerAdvice` перехватывает и обрабатывает все возможные исключения:
 
-**Пример кода GlobalExceptionHandler**
+**Пример кода `GlobalExceptionHandler`**
 
 ```java
 @RestControllerAdvice
@@ -53,9 +53,9 @@ public class GlobalExceptionHandler {
 
 Реализованы следующие исключения:
 
-* ResourceNotFoundException
-* WrongRequestException
-* InternalServerException
+* `ResourceNotFoundException`
+* `WrongRequestException`
+* `InternalServerException`
 
 Каждое исключение наследуется от `RuntimeException` и аннотируется `@ResponseStatus`
 для указания HTTP-статуса по умолчанию.
@@ -191,8 +191,8 @@ public ResponseEntity<ApiError> handleAllUncaughtException(Exception e, WebReque
 
 ### 2. Сохранение контекста запроса
 
-Извлечение пути запроса и включение его в ответ об ошибке позволит точно идентифицировать проблемную конечную 
-точку (endpoint).
+Извлечение пути запроса и включение его в ответ об ошибке позволяет точно идентифицировать проблемную конечную 
+точку.
 
 ```java
 private String getRequestPath(WebRequest request) {
