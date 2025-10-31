@@ -1075,14 +1075,14 @@
 <h3 id="entity-api">Проблемы при использовании Entity напрямую в API</h3>
 <p>При использовании сущности (Entity) в контроллере Вы можете столкнуться со следующими проблемами:</p>
 <ul>
-<li>Клиенты смогут передавать в запросе любые поля сущности</li>
-<li>В ответах клиент видит <strong>все</strong> поля сущности</li>
-<li>Изменения в модели базы данных автоматически влияют на API</li>
-<li>Невозможно разделить правила валидации для базы данных и для API</li>
+<li>Клиенты смогут передавать в запросе любые поля сущности.</li>
+<li>В ответах клиент видит <strong>все</strong> поля сущности.</li>
+<li>Изменения в модели базы данных автоматически влияют на API.</li>
+<li>Невозможно разделить правила валидации для базы данных и для API.</li>
 </ul>
-<p>Предположим, что в сущности <code>Task</code> есть поле <code>someInternalField</code>, которые не должно быть доступно для модификации и
+<p>Предположим, что в сущности <code>Task</code> есть поле <code>someInternalField</code>, которое не должно быть доступно для модификации и
 передачи. Клиент сможет задать своё значение и передать поле <code>someInternalField</code>. Также клиент сможет задать <code>id</code> вручную.</p>
-<p><strong>Пример сущности Task</strong></p>
+<p><strong>Пример сущности <code>Task</code></strong></p>
 <div class="highlight"><pre><span></span><code><span class="nd">@Entity</span>
 <span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Task</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="kd">private</span><span class="w"> </span><span class="n">Long</span><span class="w"> </span><span class="n">id</span><span class="p">;</span>
@@ -1094,7 +1094,7 @@
 <span class="w">  </span><span class="p">...</span>
 <span class="p">}</span>
 </code></pre></div>
-<p><strong>Пример работы в контроллере с использованием Task</strong></p>
+<p><strong>Пример работы в контроллере с использованием <code>Task</code></strong></p>
 <div class="highlight"><pre><span></span><code><span class="nd">@RestController</span>
 <span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">TaskController</span><span class="w"> </span><span class="p">{</span>
 
@@ -1117,10 +1117,10 @@
 </code></pre></div>
 <p>Решением проблемы безопасности является разделение моделей API и базы данных через DTO. </p>
 <h3 id="dto_1">Пример решения с DTO</h3>
-<p><strong>Используйте TaskRequest вместо Task</strong></p>
+<p><strong>Используйте <code>TaskRequest</code> вместо <code>Task</code></strong></p>
 <div class="highlight"><pre><span></span><code><span class="kd">public</span><span class="w"> </span><span class="kd">record</span> <span class="nc">TaskRequest</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">title</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">description</span><span class="p">)</span><span class="w"> </span><span class="p">{}</span>
 </code></pre></div>
-<p><strong>Пример работы в контроллере с использованием TaskRequest</strong></p>
+<p><strong>Пример работы в контроллере с использованием <code>TaskRequest</code></strong></p>
 <div class="highlight"><pre><span></span><code><span class="nd">@RestController</span>
 <span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">TaskController</span><span class="w"> </span><span class="p">{</span>
 
@@ -1151,11 +1151,16 @@
 <h2 id="dto_2">Реализация DTO в проекте</h2>
 <h3 id="dto_3">Структура DTO классов</h3>
 <p>Пакет: <code>com.example.taskmanager.dto</code></p>
+<p>Классы:</p>
 <ul>
-<li>TaskRequest.class </li>
-<li>TaskResponse.class</li>
-<li>ApiError.class</li>
+<li><code>TaskRequest</code></li>
+<li><code>TaskResponse</code></li>
+<li><code>ApiError</code></li>
 </ul>
+<div class="admonition note">
+<p class="admonition-title">Примечание</p>
+<p>Информация о структуре DTO также присутствует в разделе <a href="../01_architecture/#dto">архитектуры приложения</a></p>
+</div>
 <h3 id="taskrequest-">TaskRequest - для создания и обновления задач</h3>
 <div class="highlight"><pre><span></span><code><span class="nd">@Schema</span><span class="p">(</span><span class="n">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Request for creating or updating a task&quot;</span><span class="p">)</span>
 <span class="kd">public</span><span class="w"> </span><span class="kd">record</span> <span class="nc">TaskRequest</span><span class="p">(</span>
@@ -1204,7 +1209,7 @@
 <li>Содержит только необходимые для ответа поля</li>
 </ul>
 <h2 id="entity-dto">Маппинг между Entity и DTO</h2>
-<p>В проекте для наглядности используется ручной маппинг, но на реальных проектах рекомендуется использовать готовую библиотеку.</p>
+<p>В проекте для наглядности используется ручной маппинг, но в промышленной разработке рекомендуется использовать готовые решения.</p>
 <p><strong>Текущая реализация (ручной маппинг)</strong>
 <div class="highlight"><pre><span></span><code><span class="nd">@Component</span>
 <span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">TaskMapper</span><span class="w"> </span><span class="p">{</span>
@@ -1256,11 +1261,13 @@
 </ul>
 <h2 id="dto_4">Преимущества DTO паттерна</h2>
 <h3 id="1">1. Безопасность</h3>
-<p>Для защиты от несанкционированной инициализации данных рекомендуется использовать DTO только с разрешенными полями. Для этого:
-* Создавайте отдельные DTO для каждой конечной точки
-* Используйте явное преобразование DTO в Entity вместо прямого использования Entity в контроллерах</p>
+<p>Для защиты от несанкционированной инициализации данных рекомендуется использовать DTO только с разрешенными полями. Для этого:</p>
+<ul>
+<li>Создавайте отдельные DTO для каждой конечной точки</li>
+<li>Используйте явное преобразование DTO в Entity вместо прямого использования Entity в контроллерах</li>
+</ul>
 <h3 id="2">2. Оптимизация производительности</h3>
-<p>При преобразовании объекта в JSON, его поле с <code>FetchType.LAZY</code> могут вызвать ошибку.
+<p>При преобразовании объекта в JSON его поля с <code>FetchType.LAZY</code> могут вызвать ошибку.
 Чтобы этого избежать, используйте DTO с явным контролем данных:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">public</span><span class="w"> </span><span class="kd">record</span> <span class="nc">TaskResponse</span><span class="p">(</span><span class="n">Long</span><span class="w"> </span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">status</span><span class="p">)</span><span class="w"> </span><span class="p">{}</span>
 </code></pre></div>

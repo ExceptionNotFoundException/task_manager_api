@@ -1039,16 +1039,16 @@
 качество кода через разные уровни тестового покрытия.</p>
 <h3 id="_2">Структура тестов в проекте:</h3>
 <ul>
-<li><strong>TaskControllerTest</strong></li>
-<li><strong>TaskServiceTest</strong></li>
-<li><strong>TaskManagerApplicationTests</strong></li>
+<li><strong><code>TaskControllerTest</code></strong></li>
+<li><strong><code>TaskServiceTest</code></strong></li>
+<li><strong><code>TaskManagerApplicationTests</code></strong></li>
 </ul>
 <h2 id="unit-">Unit-тесты сервисов</h2>
 <h3 id="taskservice">Тестирование TaskService</h3>
 <p>Unit-тесты фокусируются на бизнес-логике без зависимостей от внешних систем.</p>
 <p><code>TaskServiceTest</code> - это unit-тест для сервисного слоя приложения,
 построенный с использованием фреймворка Mockito.</p>
-<p><strong>Структура TaskServiceTest</strong></p>
+<p><strong>Структура <code>TaskServiceTest</code></strong></p>
 <table>
 <thead>
 <tr>
@@ -1075,7 +1075,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Принцип работы TaskServiceTest</strong></p>
+<p><strong>Принцип работы <code>TaskServiceTest</code></strong></p>
 <ol>
 <li>
 <p>Класс использует аннотацию <code>@ExtendWith(MockitoExtension.class)</code> для интеграции <a href="https://site.mockito.org/">Mockito</a> с <a href="https://docs.junit.org/current/user-guide/#overview-what-is-junit">JUnit 5</a>, 
@@ -1084,8 +1084,8 @@
 <code>TaskServiceImpl</code> через аннотацию <code>@InjectMocks</code>.</p>
 </li>
 <li>
-<p>В методе <code>setUp()</code>, выполняемом перед каждым тестом, инициализируются тестовые данные: создается 
-объект сущности <code>Task</code> и соответствующий ему DTO <code>TaskResponse</code> с одинаковыми идентификаторами и заголовками</p>
+<p>В методе <code>setUp()</code>, выполняемом перед каждым тестом, инициализируются тестовые данные: создаётся 
+объект сущности <code>Task</code> и соответствующий ему DTO <code>TaskResponse</code> с одинаковыми идентификаторами и заголовками.</p>
 </li>
 </ol>
 <div class="highlight"><pre><span></span><code><span class="nd">@ExtendWith</span><span class="p">(</span><span class="n">MockitoExtension</span><span class="p">.</span><span class="na">class</span><span class="p">)</span>
@@ -1155,8 +1155,8 @@
 и [ObjectMapper]https://javadoc.io/doc/com.fasterxml.jackson.core/jackson-databind/latest/com/fasterxml/jackson/databind/ObjectMapper.html) для преобразования объектов в JSON. Зависимость <code>TaskService</code> заменяется на <code>@MockBean</code>, 
 что позволяет контролировать его поведение без использования настоящей реализации.</p>
 <p>Тест проверяет корректность работы конечной точки для создания задач, отправляя POST-запрос с данными 
-задачи и проверяя HTTP статус ответа, структуру возвращаемого JSON и факт того что соответствующий метод сервиса был вызван.</p>
-<p><strong>Структура TaskServiceTest</strong></p>
+задачи и проверяя HTTP-статус ответа, структуру возвращаемого JSON и тот факт, что соответствующий метод сервиса был вызван.</p>
+<p><strong>Структура <code>TaskServiceTest</code></strong></p>
 <table>
 <thead>
 <tr>
@@ -1183,7 +1183,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Пример кода TaskControllerTest</strong></p>
+<p><strong>Пример кода <code>TaskControllerTest</code></strong></p>
 <div class="highlight"><pre><span></span><code><span class="nd">@WebMvcTest</span><span class="p">(</span><span class="n">TaskController</span><span class="p">.</span><span class="na">class</span><span class="p">)</span>
 <span class="kd">class</span> <span class="nc">TaskControllerTest</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nd">@Autowired</span>
@@ -1244,8 +1244,8 @@
 явно разделён на следующие этапы:</p>
 <ol>
 <li>Arrange - подготовка входных данных</li>
-<li>Act - Тестирование целевого метода</li>
-<li>Assert - Проверка результатов</li>
+<li>Act - тестирование целевого метода</li>
+<li>Assert - проверка результатов</li>
 </ol>
 <div class="highlight"><pre><span></span><code><span class="nd">@Test</span>
 <span class="kt">void</span><span class="w"> </span><span class="nf">createTask_WithValidData_ShouldReturnCreatedTask</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>

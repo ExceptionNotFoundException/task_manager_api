@@ -1173,13 +1173,13 @@
 <h2 id="_2">Структура классов</h2>
 <p>Пакет <code>com.example.taskmanager.exception</code></p>
 <ul>
-<li>GlobalExceptionHandler</li>
-<li>InternalServerException</li>
-<li>ResourceNotFoundException</li>
-<li>WrongRequestException</li>
+<li><code>GlobalExceptionHandler</code></li>
+<li><code>InternalServerException</code></li>
+<li><code>ResourceNotFoundException</code></li>
+<li><code>WrongRequestException</code></li>
 </ul>
 <h2 id="_3">Архитектура обработки исключений</h2>
-<p><strong>Методы GlobalExceptionHandler</strong></p>
+<p><strong>Методы <code>GlobalExceptionHandler</code></strong></p>
 <table>
 <thead>
 <tr>
@@ -1191,45 +1191,45 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;">handleResourceNotFoundException</td>
-<td style="text-align: center;">ResourceNotFoundException</td>
+<td style="text-align: center;"><code>handleResourceNotFoundException</code></td>
+<td style="text-align: center;"><code>ResourceNotFoundException</code></td>
 <td style="text-align: center;">404</td>
 <td style="text-align: center;">Отсутствие запрашиваемого ресурса</td>
 </tr>
 <tr>
-<td style="text-align: center;">handleWrongRequestException</td>
-<td style="text-align: center;">WrongRequestException</td>
+<td style="text-align: center;"><code>handleWrongRequestException</code></td>
+<td style="text-align: center;"><code>WrongRequestException</code></td>
 <td style="text-align: center;">400</td>
 <td style="text-align: center;">Некорректные запросы от клиента</td>
 </tr>
 <tr>
-<td style="text-align: center;">handleInternalServerException</td>
-<td style="text-align: center;">InternalServerException</td>
+<td style="text-align: center;"><code>handleInternalServerException</code></td>
+<td style="text-align: center;"><code>InternalServerException</code></td>
 <td style="text-align: center;">500</td>
-<td style="text-align: center;">Внутренние ошибки сервера с сохранением stack trace</td>
+<td style="text-align: center;">Внутренние ошибки сервера с сохранением трассировки стека</td>
 </tr>
 <tr>
-<td style="text-align: center;">handleValidationExceptions</td>
-<td style="text-align: center;">MethodArgumentNotValidException</td>
+<td style="text-align: center;"><code>handleValidationExceptions</code></td>
+<td style="text-align: center;"><code>MethodArgumentNotValidException</code></td>
 <td style="text-align: center;">400</td>
 <td style="text-align: center;">Ошибки валидации DTO с детализацией по полям</td>
 </tr>
 <tr>
-<td style="text-align: center;">handleConstraintViolationException</td>
-<td style="text-align: center;">ConstraintViolationException</td>
+<td style="text-align: center;"><code>handleConstraintViolationException</code></td>
+<td style="text-align: center;"><code>ConstraintViolationException</code></td>
 <td style="text-align: center;">400</td>
 <td style="text-align: center;">Нарушения constraints валидации</td>
 </tr>
 <tr>
-<td style="text-align: center;">handleAllUncaughtException</td>
-<td style="text-align: center;">Exception</td>
+<td style="text-align: center;"><code>handleAllUncaughtException</code></td>
+<td style="text-align: center;"><code>Exception</code></td>
 <td style="text-align: center;">500</td>
 <td style="text-align: center;">Обработка остальных исключений</td>
 </tr>
 </tbody>
 </table>
 <p>Класс <code>GlobalExceptionHandler</code> с аннотацией <code>@RestControllerAdvice</code> перехватывает и обрабатывает все возможные исключения:</p>
-<p><strong>Пример кода GlobalExceptionHandler</strong></p>
+<p><strong>Пример кода <code>GlobalExceptionHandler</code></strong></p>
 <div class="highlight"><pre><span></span><code><span class="nd">@RestControllerAdvice</span>
 <span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">GlobalExceptionHandler</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">Logger</span><span class="w"> </span><span class="n">log</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LoggerFactory</span><span class="p">.</span><span class="na">getLogger</span><span class="p">(</span><span class="n">GlobalExceptionHandler</span><span class="p">.</span><span class="na">class</span><span class="p">);</span>
@@ -1247,9 +1247,9 @@
 <h3 id="_4">Иерархия пользовательских исключений</h3>
 <p>Реализованы следующие исключения:</p>
 <ul>
-<li>ResourceNotFoundException</li>
-<li>WrongRequestException</li>
-<li>InternalServerException</li>
+<li><code>ResourceNotFoundException</code></li>
+<li><code>WrongRequestException</code></li>
+<li><code>InternalServerException</code></li>
 </ul>
 <p>Каждое исключение наследуется от <code>RuntimeException</code> и аннотируется <code>@ResponseStatus</code>
 для указания HTTP-статуса по умолчанию.</p>
@@ -1354,8 +1354,8 @@
 <span class="p">}</span>
 </code></pre></div>
 <h3 id="2">2. Сохранение контекста запроса</h3>
-<p>Извлечение пути запроса и включение его в ответ об ошибке позволит точно идентифицировать проблемную конечную 
-точку (endpoint).</p>
+<p>Извлечение пути запроса и включение его в ответ об ошибке позволяет точно идентифицировать проблемную конечную 
+точку.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">private</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">getRequestPath</span><span class="p">(</span><span class="n">WebRequest</span><span class="w"> </span><span class="n">request</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">request</span><span class="w"> </span><span class="k">instanceof</span><span class="w"> </span><span class="n">ServletWebRequest</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="p">((</span><span class="n">ServletWebRequest</span><span class="p">)</span><span class="w"> </span><span class="n">request</span><span class="p">).</span><span class="na">getRequest</span><span class="p">().</span><span class="na">getRequestURI</span><span class="p">();</span>

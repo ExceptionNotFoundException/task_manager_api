@@ -1104,15 +1104,15 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;">TODO</td>
+<td style="text-align: center;"><code>TODO</code></td>
 <td style="text-align: center;">Задача создана, но не начата</td>
 </tr>
 <tr>
-<td style="text-align: center;">IN_PROGRESS</td>
+<td style="text-align: center;"><code>IN_PROGRESS</code></td>
 <td style="text-align: center;">Задача в работе</td>
 </tr>
 <tr>
-<td style="text-align: center;">DONE</td>
+<td style="text-align: center;"><code>DONE</code></td>
 <td style="text-align: center;">Задача выполнена</td>
 </tr>
 </tbody>
@@ -1141,12 +1141,12 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;">Host</td>
-<td style="text-align: center;">localhost:8080</td>
+<td style="text-align: center;"><code>Host</code></td>
+<td style="text-align: center;"><code>localhost:8080</code></td>
 </tr>
 <tr>
-<td style="text-align: center;">Accept</td>
-<td style="text-align: center;">application/json</td>
+<td style="text-align: center;"><code>Accept</code></td>
+<td style="text-align: center;"><code>application/json</code></td>
 </tr>
 </tbody>
 </table>
@@ -1155,7 +1155,7 @@
 <span class="na">Host</span><span class="o">:</span> <span class="l">localhost:8080</span>
 <span class="na">Accept</span><span class="o">:</span> <span class="l">application/json</span>
 </code></pre></div>
-<p><strong>Пример успешного ответа (200 OK)</strong></p>
+<p><strong>Пример успешного ответа (<code>200 OK</code>)</strong></p>
 <div class="highlight"><pre><span></span><code><span class="p">[</span>
 <span class="w">  </span><span class="p">{</span>
 <span class="w">    </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
@@ -1175,8 +1175,8 @@
 </code></pre></div>
 <p><strong>Коды статуса</strong></p>
 <ul>
-<li><strong>200 OK</strong> - задачи успешно получены</li>
-<li><strong>500 Internal Server Error</strong> - внутренняя ошибка сервера</li>
+<li><strong><code>200 OK</code></strong> - задачи успешно получены</li>
+<li><strong><code>500 Internal Server Error</code></strong> - внутренняя ошибка сервера</li>
 </ul>
 <h3 id="2-id">2. Получить задачу по ID</h3>
 <p><code>GET /api/tasks/{id}</code> - получить конкретную задачу.</p>
@@ -1192,8 +1192,8 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;">id</td>
-<td style="text-align: center;">Long</td>
+<td style="text-align: center;"><code>id</code></td>
+<td style="text-align: center;"><code>Long</code></td>
 <td style="text-align: center;">Да</td>
 <td style="text-align: center;">ID задачи</td>
 </tr>
@@ -1209,12 +1209,12 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;">Host</td>
-<td style="text-align: center;">localhost:8080</td>
+<td style="text-align: center;"><code>Host</code></td>
+<td style="text-align: center;"><code>localhost:8080</code></td>
 </tr>
 <tr>
-<td style="text-align: center;">Accept</td>
-<td style="text-align: center;">application/json</td>
+<td style="text-align: center;"><code>Accept</code></td>
+<td style="text-align: center;"><code>application/json</code></td>
 </tr>
 </tbody>
 </table>
@@ -1223,7 +1223,7 @@
 <span class="na">Host</span><span class="o">:</span> <span class="l">localhost:8080</span>
 <span class="na">Accept</span><span class="o">:</span> <span class="l">application/json</span>
 </code></pre></div>
-<p><strong>Пример успешного ответа (200 OK)</strong></p>
+<p><strong>Пример успешного ответа (<code>200 OK</code>)</strong></p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Изучить Spring Boot&quot;</span><span class="p">,</span>
@@ -1232,7 +1232,7 @@
 <span class="w">  </span><span class="nt">&quot;createdAt&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-10-10T16:36:02.95536&quot;</span>
 <span class="p">}</span>
 </code></pre></div>
-<p><strong>Пример ошибки (404 Not Found)</strong></p>
+<p><strong>Пример ошибки (<code>404 Not Found</code>)</strong></p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;timestamp&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-10-10T16:36:02.95536&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">404</span><span class="p">,</span>
@@ -1243,10 +1243,10 @@
 </code></pre></div>
 <p><strong>Коды статуса</strong></p>
 <ul>
-<li><strong>200 OK</strong> - задача по указанному ID успешно получена</li>
-<li><strong>400 Bad Request</strong> - невалидный ID</li>
-<li><strong>404 Not Found</strong> - задача не найдена</li>
-<li><strong>500 Internal Server Error</strong> - внутренняя ошибка сервера</li>
+<li><strong><code>200 OK</code></strong> - задача по указанному ID успешно получена</li>
+<li><strong><code>400 Bad Request</code></strong> - невалидный ID</li>
+<li><strong><code>404 Not Found</code></strong> - задача не найдена</li>
+<li><strong><code>500 Internal Server Error</code></strong> - внутренняя ошибка сервера</li>
 </ul>
 <h3 id="3">3. Создать новую задачу</h3>
 <p><code>POST /api/tasks</code> - создает новую задачу в системе.</p>
@@ -1260,20 +1260,20 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;">Host</td>
-<td style="text-align: center;">localhost:8080</td>
+<td style="text-align: center;"><code>Host</code></td>
+<td style="text-align: center;"><code>localhost:8080</code></td>
 </tr>
 <tr>
-<td style="text-align: center;">Content-Type</td>
-<td style="text-align: center;">application/json</td>
+<td style="text-align: center;"><code>Content-Type</code></td>
+<td style="text-align: center;"><code>application/json</code></td>
 </tr>
 <tr>
-<td style="text-align: center;">Accept</td>
-<td style="text-align: center;">application/json</td>
+<td style="text-align: center;"><code>Accept</code></td>
+<td style="text-align: center;"><code>application/json</code></td>
 </tr>
 </tbody>
 </table>
-<p><strong>Тело запроса (TaskRequest)</strong></p>
+<p><strong>Тело запроса (<code>TaskRequest</code>)</strong></p>
 <table>
 <thead>
 <tr>
@@ -1286,22 +1286,22 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;">title</td>
-<td style="text-align: center;">String</td>
+<td style="text-align: center;"><code>title</code></td>
+<td style="text-align: center;"><code>String</code></td>
 <td style="text-align: center;">Да</td>
 <td style="text-align: center;">1-100 символов</td>
 <td style="text-align: center;">Название задачи</td>
 </tr>
 <tr>
-<td style="text-align: center;">description</td>
-<td style="text-align: center;">String</td>
+<td style="text-align: center;"><code>description</code></td>
+<td style="text-align: center;"><code>String</code></td>
 <td style="text-align: center;">Нет</td>
 <td style="text-align: center;">до 500 символов</td>
 <td style="text-align: center;">Описание задачи</td>
 </tr>
 <tr>
-<td style="text-align: center;">status</td>
-<td style="text-align: center;">TaskStatus</td>
+<td style="text-align: center;"><code>status</code></td>
+<td style="text-align: center;"><code>TaskStatus</code></td>
 <td style="text-align: center;">Да</td>
 <td style="text-align: center;">только статусы TODO/IN_PROGRESS/DONE</td>
 <td style="text-align: center;">Статус задачи</td>
@@ -1320,7 +1320,7 @@
 <span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;TODO&quot;</span>
 <span class="p">}</span>
 </code></pre></div>
-<p><strong>Пример успешного ответа (201 CREATED)</strong></p>
+<p><strong>Пример успешного ответа (<code>201 CREATED</code>)</strong></p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;New Task-123&quot;</span><span class="p">,</span>
@@ -1329,7 +1329,7 @@
 <span class="w">  </span><span class="nt">&quot;createdAt&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-10-10T16:36:02.95536&quot;</span>
 <span class="p">}</span>
 </code></pre></div>
-<p><strong>Ошибки валидации (400 Bad Request)</strong></p>
+<p><strong>Ошибки валидации (<code>400 Bad Request</code>)</strong></p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;timestamp&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-10-10T16:36:02.95536&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">400</span><span class="p">,</span>
@@ -1352,9 +1352,9 @@
 </code></pre></div>
 <p><strong>Коды статуса</strong></p>
 <ul>
-<li><strong>201 CREATED</strong> - задача успешно создана</li>
-<li><strong>400 Bad Request</strong> - невалидные данные</li>
-<li><strong>500 Internal Server Error</strong> - внутренняя ошибка сервера</li>
+<li><strong><code>201 CREATED</code></strong> - задача успешно создана</li>
+<li><strong><code>400 Bad Request</code></strong> - невалидные данные</li>
+<li><strong><code>500 Internal Server Error</code></strong> - внутренняя ошибка сервера</li>
 </ul>
 <h3 id="4">4. Обновить задачу</h3>
 <p><code>PUT /api/tasks/{id}</code> - обновляет существующую задачу. Все поля являются опциональными - передавайте только те, которые нужно изменить.</p>
@@ -1368,16 +1368,16 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;">Host</td>
-<td style="text-align: center;">localhost:8080</td>
+<td style="text-align: center;"><code>Host</code></td>
+<td style="text-align: center;"><code>localhost:8080</code></td>
 </tr>
 <tr>
-<td style="text-align: center;">Content-Type</td>
-<td style="text-align: center;">application/json</td>
+<td style="text-align: center;"><code>Content-Type</code></td>
+<td style="text-align: center;"><code>application/json</code></td>
 </tr>
 <tr>
-<td style="text-align: center;">Accept</td>
-<td style="text-align: center;">application/json</td>
+<td style="text-align: center;"><code>Accept</code></td>
+<td style="text-align: center;"><code>application/json</code></td>
 </tr>
 </tbody>
 </table>
@@ -1400,7 +1400,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Тело запроса (TaskRequest)</strong></p>
+<p><strong>Тело запроса (<code>TaskRequest</code>)</strong></p>
 <table>
 <thead>
 <tr>
@@ -1413,24 +1413,24 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;">title</td>
-<td style="text-align: center;">String</td>
+<td style="text-align: center;"><code>title</code></td>
+<td style="text-align: center;"><code>String</code></td>
 <td style="text-align: center;">Нет</td>
 <td style="text-align: center;">1-100 символов</td>
 <td style="text-align: center;">Новое название задачи</td>
 </tr>
 <tr>
-<td style="text-align: center;">description</td>
-<td style="text-align: center;">String</td>
+<td style="text-align: center;"><code>description</code></td>
+<td style="text-align: center;"><code>String</code></td>
 <td style="text-align: center;">Нет</td>
 <td style="text-align: center;">до 500 символов</td>
 <td style="text-align: center;">Новое описание задачи</td>
 </tr>
 <tr>
-<td style="text-align: center;">status</td>
-<td style="text-align: center;">TaskStatus</td>
+<td style="text-align: center;"><code>status</code></td>
+<td style="text-align: center;"><code>TaskStatus</code></td>
 <td style="text-align: center;">Нет</td>
-<td style="text-align: center;">TODO/IN_PROGRESS/DONE</td>
+<td style="text-align: center;"><code>TODO/IN_PROGRESS/DONE</code></td>
 <td style="text-align: center;">Новый статус задачи</td>
 </tr>
 </tbody>
@@ -1447,7 +1447,7 @@
 <span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;IN_PROGRESS&quot;</span>
 <span class="p">}</span>
 </code></pre></div>
-<p><strong>Пример успешного ответа (200 OK)</strong></p>
+<p><strong>Пример успешного ответа (<code>200 OK</code>)</strong></p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;New Task-123&quot;</span><span class="p">,</span>
@@ -1456,7 +1456,7 @@
 <span class="w">  </span><span class="nt">&quot;createdAt&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-10-10T16:36:02.95536&quot;</span>
 <span class="p">}</span>
 </code></pre></div>
-<p><strong>Пример ошибки (404 Not Found)</strong></p>
+<p><strong>Пример ошибки (<code>404 Not Found</code>)</strong></p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;timestamp&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-10-10T16:36:02.95536&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">404</span><span class="p">,</span>
@@ -1467,10 +1467,10 @@
 </code></pre></div>
 <p><strong>Коды статуса</strong></p>
 <ul>
-<li><strong>200 OK</strong> - задача успешно обновлена</li>
-<li><strong>400 Bad Request</strong> - невалидные данные или ID</li>
-<li><strong>404 Not Found</strong> - задача не найдена</li>
-<li><strong>500 Internal Server Error</strong> - внутренняя ошибка сервера</li>
+<li><strong><code>200 OK</code></strong> - задача успешно обновлена</li>
+<li><strong><code>400 Bad Request</code></strong> - невалидные данные или ID</li>
+<li><strong><code>404 Not Found</code></strong> - задача не найдена</li>
+<li><strong><code>500 Internal Server Error</code></strong> - внутренняя ошибка сервера</li>
 </ul>
 <h3 id="5">5. Удалить задачу</h3>
 <p><code>DELETE /api/tasks/{id}</code> - удаляет задачу из системы.</p>
@@ -1484,8 +1484,8 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;">Host</td>
-<td style="text-align: center;">localhost:8080</td>
+<td style="text-align: center;"><code>Host</code></td>
+<td style="text-align: center;"><code>localhost:8080</code></td>
 </tr>
 </tbody>
 </table>
@@ -1501,8 +1501,8 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;">id</td>
-<td style="text-align: center;">Long</td>
+<td style="text-align: center;"><code>id</code></td>
+<td style="text-align: center;"><code>Long</code></td>
 <td style="text-align: center;">Да</td>
 <td style="text-align: center;">ID удаляемой задачи</td>
 </tr>
@@ -1512,14 +1512,14 @@
 <div class="highlight"><pre><span></span><code><span class="nf">DELETE</span> <span class="nn">/api/tasks/1</span> <span class="kr">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Host</span><span class="o">:</span> <span class="l">localhost:8080</span>
 </code></pre></div>
-<p><strong>Успешный ответ (204 No Content)</strong></p>
+<p><strong>Успешный ответ (<code>204 No Content</code>)</strong></p>
 <div class="highlight"><pre><span></span><code><span class="kr">HTTP</span><span class="o">/</span><span class="m">1.1</span> <span class="m">204</span> <span class="ne">No Content</span>
 </code></pre></div>
 <p><strong>Коды статуса</strong></p>
 <ul>
-<li><strong>400 Bad Request</strong> - невалидный ID</li>
-<li><strong>404 Not Found</strong> - задача не найдена</li>
-<li><strong>500 Internal Server Error</strong> - внутренняя ошибка сервера</li>
+<li><strong><code>400 Bad Request</code></strong> - невалидный ID</li>
+<li><strong><code>404 Not Found</code></strong> - задача не найдена</li>
+<li><strong><code>500 Internal Server Error</code></strong> - внутренняя ошибка сервера</li>
 </ul>
 <h2 id="_3">Формат ошибок</h2>
 <h3 id="_4">Стандартный формат ошибки</h3>
@@ -1538,33 +1538,33 @@
 <tr>
 <th style="text-align: center;">Код</th>
 <th style="text-align: center;">Значение</th>
-<th style="text-align: center;">Использование</th>
+<th style="text-align: center;">Где используется</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;">200</td>
-<td style="text-align: center;">OK</td>
+<td style="text-align: center;"><code>200</code></td>
+<td style="text-align: center;"><code>OK</code></td>
 <td style="text-align: center;">Успешные GET, PUT, POST запросы</td>
 </tr>
 <tr>
-<td style="text-align: center;">204</td>
-<td style="text-align: center;">No Content</td>
+<td style="text-align: center;"><code>204</code></td>
+<td style="text-align: center;"><code>No Content</code></td>
 <td style="text-align: center;">Успешное удаление</td>
 </tr>
 <tr>
-<td style="text-align: center;">400</td>
-<td style="text-align: center;">Bad Request</td>
+<td style="text-align: center;"><code>400</code></td>
+<td style="text-align: center;"><code>Bad Request</code></td>
 <td style="text-align: center;">Невалидные данные или параметры</td>
 </tr>
 <tr>
-<td style="text-align: center;">404</td>
-<td style="text-align: center;">Not Found</td>
+<td style="text-align: center;"><code>404</code></td>
+<td style="text-align: center;"><code>Not Found</code></td>
 <td style="text-align: center;">Ресурс не существует</td>
 </tr>
 <tr>
-<td style="text-align: center;">500</td>
-<td style="text-align: center;">Internal Server Error</td>
+<td style="text-align: center;"><code>500</code></td>
+<td style="text-align: center;"><code>Internal Server Error</code></td>
 <td style="text-align: center;">Внутренняя ошибка сервера</td>
 </tr>
 </tbody>
