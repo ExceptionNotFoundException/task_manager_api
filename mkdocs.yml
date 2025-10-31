@@ -40,11 +40,14 @@ nav:
 
 plugins:
   - search
-  - i18n:
+    - i18n:
       default_language: ru
       languages:
-        ru: Русский
-        en: English
+        - locale: ru
+          name: Русский
+          default: true
+        - locale: en
+          name: English
 
 markdown_extensions:
   - pymdownx.superfences
@@ -61,4 +64,5 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/ExceptionNotFoundException
+
       name: Github
