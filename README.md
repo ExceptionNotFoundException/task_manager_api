@@ -139,8 +139,6 @@ GitHub: [ExceptionNotFoundException](https://github.com/ExceptionNotFoundExcepti
 
 Email: gabergan90@gmail.com
 
----
-_Проект создан как портфолио технического писателя и Java-разработчика, демонстрирующий профессиональные подходы к созданию enterprise-приложений._
 
 
 
